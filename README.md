@@ -2,6 +2,15 @@
 
 TypeScript framework for building real-time voice agent applications using the Google Gemini Live API.
 
+## Official Support
+
+This repository is the officially supported open-source version of the Bodhi Realtime Agent Framework from **Bodhi Agent**.
+
+- **Official website**: [https://bodhiagent.live](https://bodhiagent.live)
+- **Company**: Bodhi Agent
+- **GitHub organization**: [BodhiAgent](https://github.com/BodhiAgent)
+- **Project repository**: [BodhiAgent/bodhi_realtime_agent](https://github.com/BodhiAgent/bodhi_realtime_agent)
+
 ## Features
 
 - **Real-time voice**: Bidirectional audio streaming with Gemini Live API and server-side turn detection

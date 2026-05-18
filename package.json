@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "TypeScript framework for real-time voice agent applications using Google Gemini Live API",
   "license": "MIT",
-  "homepage": "https://github.com/BodhiAgent/bodhi_realtime_agent#readme",
+  "homepage": "https://bodhiagent.live",
   "bugs": {
     "url": "https://github.com/BodhiAgent/bodhi_realtime_agent/issues"
   },
