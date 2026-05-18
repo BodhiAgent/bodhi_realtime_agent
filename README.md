@@ -36,7 +36,7 @@ This repository is the officially supported open-source version of the Bodhi Rea
 ## Installation
 
 ```bash
-pnpm add @bodhi_agent/realtime-agent-framework
+pnpm add bodhi-realtime-agent
 ```
 
 ## Quick Start
@@ -44,8 +44,8 @@ pnpm add @bodhi_agent/realtime-agent-framework
 ```typescript
 import { google } from '@ai-sdk/google';
 import { z } from 'zod';
-import { VoiceSession } from '@bodhi_agent/realtime-agent-framework';
-import type { MainAgent, ToolDefinition } from '@bodhi_agent/realtime-agent-framework';
+import { VoiceSession } from 'bodhi-realtime-agent';
+import type { MainAgent, ToolDefinition } from 'bodhi-realtime-agent';
 
 // 1. Define tools
 const getCurrentTime: ToolDefinition = {
@@ -236,7 +236,7 @@ const session = new VoiceSession({
 The memory system automatically extracts durable facts about the user from conversation:
 
 ```typescript
-import { MarkdownMemoryStore, MemoryDistiller } from '@bodhi_agent/realtime-agent-framework';
+import { MarkdownMemoryStore, MemoryDistiller } from 'bodhi-realtime-agent';
 
 const memoryStore = new MarkdownMemoryStore('./memory');
 const distiller = new MemoryDistiller(
