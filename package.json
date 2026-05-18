@@ -1,7 +1,7 @@
 {
   "name": "@bodhi_agent/realtime-agent-framework",
   "version": "0.1.0",
-  "description": "TypeScript framework for real-time voice agent applications using Google Gemini Live API",
+  "description": "TypeScript framework for building real-time voice agents with provider-pluggable realtime LLM transports",
   "license": "MIT",
   "homepage": "https://bodhiagent.live",
   "bugs": {

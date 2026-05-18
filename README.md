@@ -1,6 +1,12 @@
+<p align="center">
+  <a href="https://bodhiagent.live">
+    <img src="docs/images/icon_graphic_only.png" alt="Bodhi Agent" width="120" />
+  </a>
+</p>
+
 # Bodhi Realtime Agent Framework
 
-TypeScript framework for building real-time voice agent applications using the Google Gemini Live API.
+TypeScript framework for building real-time voice agents with provider-pluggable realtime LLM transports, tool execution, subagents, memory, and session orchestration.
 
 ## Official Support
 
@@ -13,18 +19,18 @@ This repository is the officially supported open-source version of the Bodhi Rea
 
 ## Features
 
-- **Real-time voice**: Bidirectional audio streaming with Gemini Live API and server-side turn detection
+- **Real-time voice**: Bidirectional audio streaming through provider-pluggable realtime LLM transports, including Gemini Live and OpenAI Realtime adapters
 - **Multi-agent**: Define multiple agents with distinct personas and tool sets; transfer between them mid-conversation
 - **Function tools**: Inline (blocking) and background (non-blocking) tool execution with Zod validation
-- **Background subagents**: Long-running tool calls hand off to Vercel AI SDK subagents while Gemini keeps talking
+- **Background subagents**: Long-running tool calls hand off to Vercel AI SDK subagents while the realtime agent keeps talking
 - **Memory**: Automatic extraction and persistence of durable user facts across sessions
-- **Session resumption**: Transparent reconnection via Gemini resumption handles and audio buffering
+- **Session resumption**: Transparent reconnection and audio buffering for long-running voice sessions
 - **Observability**: Type-safe EventBus and lifecycle hooks for logging, metrics, and debugging
 
 ## Requirements
 
 - Node.js >= 22
-- A Google API key with Gemini Live API access
+- An API key for your selected realtime model provider, such as Gemini Live or OpenAI Realtime
 - pnpm (recommended)
 
 ## Installation
